@@ -59,3 +59,7 @@ C:\Users\lucas\Documentos\Projetos\Uniftec.Redesocial\Uiftec.PPW.Redesocial\Uift
 C:\Users\lucas\Documentos\Projetos\Uniftec.Redesocial\Uiftec.PPW.Redesocial\Uiftec.PPW.Redesocial\obj\Debug\net8.0\Uiftec.PPW.Redesocial.pdb
 C:\Users\lucas\Documentos\Projetos\Uniftec.Redesocial\Uiftec.PPW.Redesocial\Uiftec.PPW.Redesocial\obj\Debug\net8.0\Uiftec.PPW.Redesocial.genruntimeconfig.cache
 C:\Users\lucas\Documentos\Projetos\Uniftec.Redesocial\Uiftec.PPW.Redesocial\Uiftec.PPW.Redesocial\obj\Debug\net8.0\ref\Uiftec.PPW.Redesocial.dll
+C:\Users\lucas\Documents\GITHUB\Uniftec.PPW.Redesocial\Uiftec.PPW.Redesocial\Uiftec.PPW.Redesocial\obj\Debug\net8.0\Uiftec.PPW.Redesocial.sourcelink.json
+C:\Users\lucas\Documents\GITHUB\Uniftec.PPW.Redesocial\Uiftec.PPW.Redesocial\Uiftec.PPW.Redesocial\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\lucas\Documents\GITHUB\Uniftec.PPW.Redesocial\Uiftec.PPW.Redesocial\Uiftec.PPW.Redesocial\obj\Debug\net8.0\Uiftec.PPW.Redesocial.csproj.AssemblyReference.cache
+C:\Users\lucas\Documents\GITHUB\Uniftec.PPW.Redesocial\Uiftec.PPW.Redesocial\Uiftec.PPW.Redesocial\obj\Debug\net8.0\Uiftec.PPW.Redesocial.csproj.CopyComplete
