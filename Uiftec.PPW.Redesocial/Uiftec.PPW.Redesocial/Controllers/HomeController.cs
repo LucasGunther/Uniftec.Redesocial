@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Uiftec.PPW.Redesocial.Models;
 using Newtonsoft.Json;
+using static Uiftec.PPW.Redesocial.Models.DestaquesModel;
 
 namespace Uiftec.PPW.Redesocial.Controllers
 {
@@ -11,7 +12,6 @@ namespace Uiftec.PPW.Redesocial.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IWebHostEnvironment _env;
 
-        // Construtor CORRETO — injetando env
         public HomeController(ILogger<HomeController> logger, IWebHostEnvironment env)
         {
             _logger = logger;
@@ -29,10 +29,11 @@ namespace Uiftec.PPW.Redesocial.Controllers
                 Publicacoes = 20
             };
 
+
             string usuariosPath = Path.Combine(_env.ContentRootPath, "wwwroot", "BaseTemp", "usuarios.json");
             string postsPath = Path.Combine(_env.ContentRootPath, "wwwroot", "BaseTemp", "posts.json");
 
-            // Ler arquivos
+       
             var usuariosJson = System.IO.File.ReadAllText(usuariosPath);
             var postsJson = System.IO.File.ReadAllText(postsPath);
 
@@ -45,8 +46,20 @@ namespace Uiftec.PPW.Redesocial.Controllers
                 Usuarios = usuarios,
                 Postagens = posts,
                 UsuarioAtivo = usuarioativo
+
             };
-            
+            viewModel.Destaques = new List<DestaqueModel>
+{
+             new DestaqueModel { Titulo = "Evento 1", Descricao = "Descrição do Evento 1", ImagemUrl = "~/Imagens/teste.JPG" },
+             new DestaqueModel { Titulo = "Promoção", Descricao = "Confira agora mesmo!", ImagemUrl = "~/Imagens/teste.JPG" },
+             new DestaqueModel { Titulo = "Novo recurso", Descricao = "Veja a novidade no app!", ImagemUrl = "~/Imagens/teste.JPG"},
+             new DestaqueModel { Titulo = "Evento 1", Descricao = "Descrição do Evento 1", ImagemUrl = "~/Imagens/teste.JPG" },
+             new DestaqueModel { Titulo = "Promoção", Descricao = "Confira agora mesmo!", ImagemUrl = "~/Imagens/teste.JPG" },
+             new DestaqueModel { Titulo = "Novo recurso", Descricao = "Veja a novidade no app!", ImagemUrl = "~/Imagens/teste.JPG"},
+             new DestaqueModel { Titulo = "Evento 1", Descricao = "Descrição do Evento 1", ImagemUrl = "~/Imagens/teste.JPG" },
+             new DestaqueModel { Titulo = "Promoção", Descricao = "Confira agora mesmo!", ImagemUrl = "~/Imagens/teste.JPG" },
+             new DestaqueModel { Titulo = "Novo recurso", Descricao = "Veja a novidade no app!", ImagemUrl = "~/Imagens/teste.JPG"}
+};
 
             return View(viewModel);
         }

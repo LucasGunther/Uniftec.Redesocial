@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Uiftec.PPW.Redesocial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b0ca192b55300d0ed34e1d0a8aa1ddd1e8350ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3120015c5bea6b3ec3e63c1958d6a48bc42bd17c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Uiftec.PPW.Redesocial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Uiftec.PPW.Redesocial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

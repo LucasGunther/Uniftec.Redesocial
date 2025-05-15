@@ -8,7 +8,7 @@
     "QuantidadeCurtidas": 5,
     "QuantidadeComentarios": 2,
     "NomeAutor": "Lucas Gunther",
-    "FotoPerfilA": "~/ Imagens /avatar6.JPG"
+    "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
   {
     "IdPost": "1f60ed23-01d7-4c21-b597-49e02b37670f",
@@ -19,7 +19,7 @@
     "QuantidadeCurtidas": 10,
     "QuantidadeComentarios": 4,
     "NomeAutor": "Lucas Gunther",
-    "FotoPerfilAutor": "~/ Imagens /avatar6.JPG"
+    "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
 
   {
@@ -31,7 +31,7 @@
     "QuantidadeCurtidas": 25,
     "QuantidadeComentarios": 6,
     "NomeAutor": "Ana Silva",
-    "FotoPerfilAutor": "~/ Imagens /avatar6.JPG"
+    "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
   {
     "IdPost": "25d1188f-ff30-4a8f-9ae6-bd0f0dbefb1f",
@@ -42,7 +42,7 @@
     "QuantidadeCurtidas": 40,
     "QuantidadeComentarios": 9,
     "NomeAutor": "Ana Silva",
-    "FotoPerfilAutor": "~/ Imagens /avatar6.JPG"
+    "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
 
   {
@@ -54,7 +54,7 @@
     "QuantidadeCurtidas": 18,
     "QuantidadeComentarios": 3,
     "NomeAutor": "Carlos Pereira",
-    "FotoPerfilAutor": "~/ Imagens /avatar6.JPG"
+    "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
   {
     "IdPost": "f8db7c4b-909a-4f3e-94d6-1d6f9ba2e9d2",
@@ -65,7 +65,7 @@
     "QuantidadeCurtidas": 30,
     "QuantidadeComentarios": 7,
     "NomeAutor": "Carlos Pereira",
-    "FotoPerfilAutor": "~/ Imagens /avatar6.JPG"
+    "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
 
   {
@@ -77,7 +77,7 @@
     "QuantidadeCurtidas": 34,
     "QuantidadeComentarios": 5,
     "NomeAutor": "Mariana Souza",
-    "FotoPerfilAutor": "~/ Imagens /avatar6.JPG"
+    "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
   {
     "IdPost": "1b16435e-064b-470a-8ec2-17471964aefb",
@@ -88,7 +88,7 @@
     "QuantidadeCurtidas": 15,
     "QuantidadeComentarios": 2,
     "NomeAutor": "Mariana Souza",
-    "FotoPerfilAutor": "~/ Imagens /avatar6.JPG"
+    "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
 
   {
@@ -100,7 +100,7 @@
     "QuantidadeCurtidas": 50,
     "QuantidadeComentarios": 10,
     "NomeAutor": "João Mendes",
-    "FotoPerfilAutor": "~/ Imagens /avatar6.JPG"
+    "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
   {
     "IdPost": "590908f5-56b8-447c-95ec-c47b9997d014",
@@ -111,6 +111,6 @@
     "QuantidadeCurtidas": 35,
     "QuantidadeComentarios": 4,
     "NomeAutor": "João Mendes",
-    "FotoPerfilAutor": "~/ Imagens /avatar6.JPG"
+    "FotoPerfilAutor": "~/Imagens/teste.JPG"
   }
 ]

@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\Imagens\\lupa.svg"
     },
     {
+      "Id": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\wwwroot\\Imagens\\teste.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\teste.jpg"
+    },
+    {
       "Id": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\wwwroot\\css\\Style.css",
       "PackagePath": "staticwebassets\\css\\Style.css"
     },

@@ -39,6 +39,32 @@
             </div>
         </div>
         <div class="panel">
+                @if (Model.Destaques != null && Model.Destaques.Any())
+                {
+                    <div class="panel mb-4">
+                        
+                        <div class="destaques-container position-relative">
+                          <div></div> 
+
+                            <div class="destaques-carousel d-flex overflow-auto">
+                                @foreach (var item in Model.Destaques)
+                                {
+                                    <div class="destaque-item mx-1">
+                                        <img class="imgstory" src="@Url.Content(item.ImagemUrl)" alt="@item.Titulo" />
+   
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                          
+                        </div>
+                    
+                }
+
+
+        </div>
+
+        <div class="panel">
             <div class="panel-heading">
                 <h3 class="panel-title">Activity Feed</h3>
             </div>
@@ -70,8 +96,8 @@
                             <li>
                                 <i class="activity__list__icon fa fa-question-circle-o"></i>
                                 <div class="activity__list__header">
-                                    <img src="@Url.Content(Model.Usuarios.FotoPerfil)" alt="Foto Perfil" />
-                                    <a href="#">@Model.Usuarios.NomeAutor</a> publicou: <a href="#">@Model.Usuarios.TextoPost</a>
+                                        <img src="@Url.Content(@usuario.FotoPerfil)" alt="Foto Perfil" />
+                                        <a href="#">@usuario.Nome</a> publicou: <a href="#">usuario.TextoPost</a>
                                 </div>
                                 <div class="activity__list__body entry-content">
                                     <p>
