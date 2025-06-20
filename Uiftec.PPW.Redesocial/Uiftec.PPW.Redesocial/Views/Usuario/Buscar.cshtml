@@ -1,39 +1,115 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@model List<Uiftec.PPW.Redesocial.Models.UsuarioModel>
+﻿@model List<Uiftec.PPW.Redesocial.Models.UsuarioModel>
 @{
     ViewData["Title"] = "Buscar Usuários";
 }
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<div class="container mt-4">
-    <h2>🔍 Buscar Usuários</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar - Rede Social</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #007BFF;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 60px;
+        }
 
-    <form method="get" asp-action="Buscar" class="row g-3 mb-4">
-        <div class="col-md-9">
-            <input type="text" name="termo" class="form-control" placeholder="Digite nome ou usuário..." value="@ViewBag.Termo" />
-        </div>
-        <div class="col-md-3">
-            <button type="submit" class="btn btn-primary w-100">Buscar</button>
-        </div>
-    </form>
+        .login-box {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
 
-    @if (Model != null && Model.Count > 0)
-    {
-        <div class="list-group">
-            @foreach (var usuario in Model)
-            {
-                <a href="/Usuario/Perfil/@usuario.ID" class="list-group-item list-group-item-action">
-                    <strong>@usuario.Nome</strong> (@usuario.Username)<br />
-                    <small>📌 Gênero: @usuario.Genero — 👥 Seguidores: @usuario.Seguidores</small>
-                </a>
+            .login-box h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333;
             }
-        </div>
-    }
-    else if (!string.IsNullOrEmpty(ViewBag.Termo as string))
-    {
-        <div class="alert alert-warning mt-3">
-            Nenhum usuário encontrado para o termo: <strong>@ViewBag.Termo</strong>
-        </div>
-    }
-</div>
+
+        .form-control {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #007BFF;
+            color: white;
+            width: 100%;
+            font-weight: bold;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+
+        .list-group {
+            margin-top: 20px;
+        }
+
+        .list-group-item {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            text-decoration: none;
+            color: #333;
+        }
+
+            .list-group-item:hover {
+                background-color: #e2e6ea;
+            }
+
+        .alert {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>🔍 Buscar Usuários</h2>
+
+        <form method="get" asp-action="Buscar">
+            <input type="text" name="termo" class="form-control" placeholder="Digite nome ou usuário..." value="@ViewBag.Termo" />
+            <button type="submit" class="btn">Buscar</button>
+        </form>
+
+        @if (Model != null && Model.Count > 0)
+        {
+            <div class="list-group">
+                @foreach (var usuario in Model)
+                {
+                    <a href="@Url.Action("Perfil", "Usuario", new { id = usuario.ID })" class="list-group-item list-group-item-action">
+                        <strong>@usuario.Nome</strong> (@usuario.Username)<br />
+                        <small>📌 Gênero: @usuario.Genero — 👥 Seguidores: @usuario.Seguidores</small>
+                    </a>
+                }
+            </div>
+        }
+        else if (!string.IsNullOrEmpty(ViewBag.Termo as string))
+        {
+            <div class="alert alert-warning">
+                Nenhum usuário encontrado para o termo: <strong>@ViewBag.Termo</strong>
+            </div>
+        }
+    </div>
+</body>
+</html>
