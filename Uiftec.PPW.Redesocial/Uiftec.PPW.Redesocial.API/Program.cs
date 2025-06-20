@@ -1,3 +1,5 @@
+﻿using Uniftec.PPW.Redesocial.FeedAPI.Dominio.Repositorio;
+using Uniftec.PPW.Redesocial.FeedAPI.Repositorio;
 
 namespace Uiftec.PPW.Redesocial.API
 {
@@ -8,11 +10,12 @@ namespace Uiftec.PPW.Redesocial.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            // 🔧 Registro da dependência para injeção de dependência
+            builder.Services.AddScoped<IFeedRepositorio, FeedRepository>();
 
             var app = builder.Build();
 
@@ -24,7 +27,6 @@ namespace Uiftec.PPW.Redesocial.API
             }
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
