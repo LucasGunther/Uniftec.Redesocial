@@ -1,17 +1,20 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Uiftec.PPW.Redesocial.Models.UsuarioModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Login";
+}
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Login - Rede Social</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #007BFF; /* Azul */
+            background-color: #007BFF;
             font-family: Arial, sans-serif;
             height: 100vh;
             display: flex;
@@ -28,21 +31,21 @@
             width: 300px;
         }
 
-        .login-box h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
+            .login-box h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333;
+            }
 
-        .login-box input[type="text"],
-        .login-box input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box;
-        }
+            .login-box input[type="text"],
+            .login-box input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                box-sizing: border-box;
+            }
 
         .login-actions {
             display: flex;
@@ -61,9 +64,9 @@
             margin-right: 40px;
         }
 
-        .login-box button:hover {
-            background-color: #0056b3;
-        }
+            .login-box button:hover {
+                background-color: #0056b3;
+            }
 
         .login-box a {
             color: #007BFF;
@@ -71,25 +74,52 @@
             font-size: 0.9em;
         }
 
-        .login-box a:hover {
-            text-decoration: underline;
+            .login-box a:hover {
+                text-decoration: underline;
+            }
+
+        .erro-msg {
+            color: red;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            text-align: center;
         }
+
+        .cadastro-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+            .cadastro-link a {
+                color: #007BFF;
+            }
     </style>
 </head>
 <body>
 
     <div class="login-box">
         <h2>Login</h2>
-        <form asp-action="Login" method="post">
-            <input type="text" placeholder="Usuário" required>
-            <input type="password" placeholder="Senha" required>
+
+        @if (ViewBag.Erro != null)
+        {
+            <div class="erro-msg">@ViewBag.Erro</div>
+        }
+
+        <form asp-action="Login" asp-controller="Login" method="post">
+            <input type="text" name="username" placeholder="Usuário" required />
+            <input type="password" name="senha" placeholder="Senha" required />
+
             <div class="login-actions">
                 <button type="submit">Entrar</button>
-                <a href="#">Esqueci minha senha</a>
+                <a href="@Url.Action("EsqueciSenha", "Login")">Esqueci minha senha</a>
             </div>
         </form>
+
+        <div class="cadastro-link">
+            Não tem conta? <a href="@Url.Action("Cadastrar", "Usuario")">Cadastre-se</a>
+        </div>
     </div>
 
 </body>
 </html>
-

@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<Uiftec.PPW.Redesocial.Models.UsuarioModel>
+@{
+    ViewData["Title"] = "Buscar Usuários";
+}
+
+<div class="container mt-4">
+    <h2>🔍 Buscar Usuários</h2>
+
+    <form method="get" asp-action="Buscar" class="row g-3 mb-4">
+        <div class="col-md-9">
+            <input type="text" name="termo" class="form-control" placeholder="Digite nome ou usuário..." value="@ViewBag.Termo" />
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary w-100">Buscar</button>
+        </div>
+    </form>
+
+    @if (Model != null && Model.Count > 0)
+    {
+        <div class="list-group">
+            @foreach (var usuario in Model)
+            {
+                <a href="/Usuario/Perfil/@usuario.ID" class="list-group-item list-group-item-action">
+                    <strong>@usuario.Nome</strong> (@usuario.Username)<br />
+                    <small>📌 Gênero: @usuario.Genero — 👥 Seguidores: @usuario.Seguidores</small>
+                </a>
+            }
+        </div>
+    }
+    else if (!string.IsNullOrEmpty(ViewBag.Termo as string))
+    {
+        <div class="alert alert-warning mt-3">
+            Nenhum usuário encontrado para o termo: <strong>@ViewBag.Termo</strong>
+        </div>
+    }
+</div>
