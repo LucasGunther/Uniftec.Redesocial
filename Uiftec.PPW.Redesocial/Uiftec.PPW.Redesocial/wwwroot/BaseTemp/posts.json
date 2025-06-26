@@ -21,7 +21,6 @@
     "NomeAutor": "Lucas Gunther",
     "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
-
   {
     "IdPost": "3c1a520e-2a9b-41dc-b041-64b659401450",
     "IdUsuarioPost": "c187fd50-56b3-4b3c-891e-7432bdf94021",
@@ -44,7 +43,6 @@
     "NomeAutor": "Ana Silva",
     "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
-
   {
     "IdPost": "7853454d-84b6-43c1-b6a7-f938b0ab7026",
     "IdUsuarioPost": "983dcf64-803e-4c7a-bb67-58e9b7d4f129",
@@ -67,7 +65,6 @@
     "NomeAutor": "Carlos Pereira",
     "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
-
   {
     "IdPost": "7cc97d4a-2496-4da7-a01b-64e3be5d090e",
     "IdUsuarioPost": "4158ad7a-3c9d-40c3-9ed8-5e9f5b73d423",
@@ -90,7 +87,6 @@
     "NomeAutor": "Mariana Souza",
     "FotoPerfilAutor": "~/Imagens/teste.JPG"
   },
-
   {
     "IdPost": "75e9c487-6ed0-4ef7-babb-1496b3b47af8",
     "IdUsuarioPost": "22ad1831-ea7c-4cd6-a4d0-f70a3159a98e",
@@ -112,5 +108,16 @@
     "QuantidadeComentarios": 4,
     "NomeAutor": "João Mendes",
     "FotoPerfilAutor": "~/Imagens/teste.JPG"
+  },
+  {
+    "IdPost": "976697ca-fc97-4f3c-91a2-a077c6729a7c",
+    "IdUsuarioPost": "00000000-0000-0000-0000-000000000000",
+    "TextoPost": "asas",
+    "ImagemUrl": null,
+    "DataPublicacao": "2025-06-25T23:02:02.3829671-03:00",
+    "QuantidadeCurtidas": 0,
+    "QuantidadeComentarios": 0,
+    "NomeAutor": null,
+    "FotoPerfilAutor": null
   }
 ]

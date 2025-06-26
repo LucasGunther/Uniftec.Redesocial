@@ -45,7 +45,8 @@ namespace Uiftec.PPW.Redesocial.Controllers
             {
                 Usuarios = usuarios,
                 Postagens = posts,
-                UsuarioAtivo = usuarioativo
+                UsuarioAtivo = usuarioativo,
+                NovoPost = new PostModel()
 
             };
             viewModel.Destaques = new List<DestaqueModel>

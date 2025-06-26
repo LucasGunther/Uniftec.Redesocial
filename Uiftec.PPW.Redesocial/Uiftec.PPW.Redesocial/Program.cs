@@ -9,6 +9,9 @@ namespace Uiftec.PPW.Redesocial
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            // ? Adiciona suporte ao HttpClient
+            builder.Services.AddHttpClient();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -16,10 +19,9 @@ namespace Uiftec.PPW.Redesocial
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.MapControllerRoute(

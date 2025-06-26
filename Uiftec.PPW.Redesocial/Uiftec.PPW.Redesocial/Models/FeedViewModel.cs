@@ -10,5 +10,7 @@ namespace Uiftec.PPW.Redesocial.Models
         public List<PostModel> Postagens { get; set; }
         public UsuarioModel UsuarioAtivo { get; set; }
         public List<DestaqueModel> Destaques { get; set; }
+        public PostModel NovoPost { get; set; }
+
     }
 }

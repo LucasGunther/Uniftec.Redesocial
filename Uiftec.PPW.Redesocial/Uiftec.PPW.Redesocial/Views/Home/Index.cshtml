@@ -70,18 +70,10 @@
                     <h3 class="panel-title">Activity Feed</h3>
                 </div>
                 <div class="panel-content panel-activity">
-                    <form action="#" class="panel-activity__status">
-                        <textarea name="user_activity" placeholder="Share what you've been up to..." class="form-control"></textarea>
-                        <div class="actions">
-                            <div class="btn-group">
-                                <button type="button" class="btn-link" title="" data-toggle="tooltip" data-original-title="Post an Image">
-                                    <i class="fa fa-image"></i>
-                                </button>
-                            </div>
-                            <button type="submit" class="btn btn-sm btn-rounded btn-info">
-                                Postar
-                            </button>
-                        </div>
+                    <form asp-action="Criar" asp-controller="Publicacao" method="post">
+                        <input type="hidden" name="IdUsuarioPost" value="@Model.UsuarioAtivo.ID" />
+                        <textarea name="TextoPost" class="form-control" placeholder="Escreva algo..."></textarea>
+                        <button type="submit" class="btn btn-primary mt-2">Postar</button>
                     </form>
                     @{
 

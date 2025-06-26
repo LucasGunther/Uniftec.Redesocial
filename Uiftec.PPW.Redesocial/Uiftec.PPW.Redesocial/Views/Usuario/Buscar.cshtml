@@ -97,11 +97,19 @@
             <div class="list-group">
                 @foreach (var usuario in Model)
                 {
-                    <a href="@Url.Action("Perfil", "Usuario", new { id = usuario.ID })" class="list-group-item list-group-item-action">
-                        <strong>@usuario.Nome</strong> (@usuario.Username)<br />
+                    <a href="/Usuario/Perfil/@usuario.ID" class="list-group-item list-group-item-action">
+                        <strong>@usuario.Nome</strong> (@usuario.Username)
+
+                        @if (ViewBag.DadosExternos != null && (bool)ViewBag.DadosExternos)
+                        {
+                            <span class="badge badge-secondary ml-2">Externo</span>
+                        }
+
+                        <br />
                         <small>📌 Gênero: @usuario.Genero — 👥 Seguidores: @usuario.Seguidores</small>
                     </a>
                 }
+
             </div>
         }
         else if (!string.IsNullOrEmpty(ViewBag.Termo as string))
