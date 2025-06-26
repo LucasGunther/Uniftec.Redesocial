@@ -24,8 +24,6 @@ namespace Uiftec.PPW.Redesocial.Controllers
             _usuariosPath = Path.Combine(_env.WebRootPath, "BaseTemp", "usuarios.json");
         }
 
-
-
         [HttpGet]
         public IActionResult Cadastrar()
         {
@@ -82,11 +80,11 @@ namespace Uiftec.PPW.Redesocial.Controllers
             return View(usuario);
         }
 
-        // ✅ NOVO: Consumir API de outro colega
+        // Consumir API de outro colega
         [HttpGet]
         public async Task<IActionResult> UsuariosColega()
         {
-            var response = await _httpClient.GetAsync("http://localhost:5136/api/UsuariosFake");
+            var response = await _httpClient.GetAsync("http://localhost:5136/api/UsuariosFake"); // adicionar URL do colega
 
             if (response.IsSuccessStatusCode)
             {
@@ -98,6 +96,37 @@ namespace Uiftec.PPW.Redesocial.Controllers
             ViewBag.Erro = "Erro ao conectar com a API externa.";
             return View("Buscar", new List<UsuarioModel>());
         }
+        [HttpGet]
+        public async Task<IActionResult> ComentariosExternos()
+        {
+            var response = await _httpClient.GetAsync("http://localhost:5136/api/ComentariosFake"); // adicionar URL do colega
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var comentarios = JsonConvert.DeserializeObject<List<ComentarioModel>>(json);
+                return View("ExibirComentarios", comentarios);
+            }
+
+            return View("ExibirComentarios", new List<ComentarioModel>());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> StoriesExternos()
+        {
+            var response = await _httpClient.GetAsync("http://localhost:5136/api/StoriesFake"); // adicionar URL do colega
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var stories = JsonConvert.DeserializeObject<List<StoryModel>>(json);
+                return View("ExibirStories", stories);
+            }
+
+            return View("ExibirStories", new List<StoryModel>());
+        }
+
+
         // Métodos auxiliares
         private List<UsuarioModel> CarregarUsuarios()
         {

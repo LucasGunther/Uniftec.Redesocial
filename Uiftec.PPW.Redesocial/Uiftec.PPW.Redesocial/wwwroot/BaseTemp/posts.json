@@ -119,5 +119,16 @@
     "QuantidadeComentarios": 0,
     "NomeAutor": null,
     "FotoPerfilAutor": null
+  },
+  {
+    "IdPost": "49e8d694-a3f9-4d51-8602-ea57bda64f2b",
+    "IdUsuarioPost": "00000000-0000-0000-0000-000000000000",
+    "TextoPost": "sas",
+    "ImagemUrl": null,
+    "DataPublicacao": "2025-06-26T16:08:32.5355197-03:00",
+    "QuantidadeCurtidas": 0,
+    "QuantidadeComentarios": 0,
+    "NomeAutor": null,
+    "FotoPerfilAutor": null
   }
 ]

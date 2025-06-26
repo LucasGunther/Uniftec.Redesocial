@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Uiftec.PPW.Redesocial.Models;
 using Newtonsoft.Json;
-using static Uiftec.PPW.Redesocial.Models.DestaquesModel;
+using static Uiftec.PPW.Redesocial.Models.StoryModel;
 
 namespace Uiftec.PPW.Redesocial.Controllers
 {
@@ -49,18 +49,12 @@ namespace Uiftec.PPW.Redesocial.Controllers
                 NovoPost = new PostModel()
 
             };
-            viewModel.Destaques = new List<DestaqueModel>
-{
-             new DestaqueModel { Titulo = "Evento 1", Descricao = "Descrição do Evento 1", ImagemUrl = "~/Imagens/teste.JPG" },
-             new DestaqueModel { Titulo = "Promoção", Descricao = "Confira agora mesmo!", ImagemUrl = "~/Imagens/teste.JPG" },
-             new DestaqueModel { Titulo = "Novo recurso", Descricao = "Veja a novidade no app!", ImagemUrl = "~/Imagens/teste.JPG"},
-             new DestaqueModel { Titulo = "Evento 1", Descricao = "Descrição do Evento 1", ImagemUrl = "~/Imagens/teste.JPG" },
-             new DestaqueModel { Titulo = "Promoção", Descricao = "Confira agora mesmo!", ImagemUrl = "~/Imagens/teste.JPG" },
-             new DestaqueModel { Titulo = "Novo recurso", Descricao = "Veja a novidade no app!", ImagemUrl = "~/Imagens/teste.JPG"},
-             new DestaqueModel { Titulo = "Evento 1", Descricao = "Descrição do Evento 1", ImagemUrl = "~/Imagens/teste.JPG" },
-             new DestaqueModel { Titulo = "Promoção", Descricao = "Confira agora mesmo!", ImagemUrl = "~/Imagens/teste.JPG" },
-             new DestaqueModel { Titulo = "Novo recurso", Descricao = "Veja a novidade no app!", ImagemUrl = "~/Imagens/teste.JPG"}
-};
+            viewModel.StoriesExternos = new List<StoryModel>
+                {
+                    new StoryModel { ImagemUrl = "~/Imagens/story1.jpg", DataExpiracao = DateTime.Now.AddHours(24), Id = Guid.NewGuid(), IdUsuario = Guid.NewGuid() },
+                    new StoryModel { ImagemUrl = "~/Imagens/story2.jpg", DataExpiracao = DateTime.Now.AddHours(24), Id = Guid.NewGuid(), IdUsuario = Guid.NewGuid() }
+                };
+
 
             return View(viewModel);
         }

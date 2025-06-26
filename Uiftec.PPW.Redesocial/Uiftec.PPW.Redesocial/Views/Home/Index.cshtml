@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="panel">
-                @if (Model.Destaques != null && Model.Destaques.Any())
+                @if (Model.StoriesExternos != null && Model.StoriesExternos.Any())
                 {
                     <div class="panel mb-4">
 
@@ -48,13 +48,22 @@
                             <div></div>
 
                             <div class="destaques-carousel d-flex overflow-auto">
-                                @foreach (var item in Model.Destaques)
+                                @if (Model.StoriesExternos != null && Model.StoriesExternos.Any())
                                 {
-                                    <div class="destaque-item mx-1">
-                                        <img class="imgstory" src="@Url.Content(item.ImagemUrl)" alt="@item.Titulo" />
-
+                                    <div class="destaques-carousel d-flex overflow-auto">
+                                        @foreach (var story in Model.StoriesExternos)
+                                        {
+                                            <div class="destaque-item mx-1 text-center">
+                                                <img class="imgstory" src="@story.ImagemUrl" alt="Story" />
+                                            </div>
+                                        }
                                     </div>
                                 }
+                                else
+                                {
+                                    <p class="text-muted">Nenhum story disponível.</p>
+                                }
+
                             </div>
                         </div>
 
