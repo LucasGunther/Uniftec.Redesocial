@@ -4,6 +4,8 @@ Projeto ASP.NET MVC para simulação de uma rede social, com funcionalidades com
 
 - Busca de usuários
 - Integração com APIs externas de colegas (mock)
+- Exibir comentarios
+- Exibir Storys
 
 ---
 
