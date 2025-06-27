@@ -9,8 +9,8 @@ namespace Uiftec.PPW.Redesocial.Controllers
         [HttpPost]
         public IActionResult Criar(PostModel post)
         {
-            post.IdPost = Guid.NewGuid();
-            post.DataPublicacao = DateTime.Now;
+            post.Id = Guid.NewGuid();
+            post.date = DateTime.Now;
 
             var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "BaseTemp", "posts.json");
             var posts = new List<PostModel>();

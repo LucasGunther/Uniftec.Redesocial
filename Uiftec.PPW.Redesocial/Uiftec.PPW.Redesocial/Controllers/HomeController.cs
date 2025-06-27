@@ -11,14 +11,16 @@ namespace Uiftec.PPW.Redesocial.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IWebHostEnvironment _env;
+        private readonly IHttpClientFactory _httpClientFactory;
 
-        public HomeController(ILogger<HomeController> logger, IWebHostEnvironment env)
+        public HomeController(ILogger<HomeController> logger, IWebHostEnvironment env, IHttpClientFactory httpClientFactory)
         {
             _logger = logger;
             _env = env;
+            _httpClientFactory = httpClientFactory;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             UsuarioModel usuarioativo = new UsuarioModel()
             {
@@ -29,32 +31,35 @@ namespace Uiftec.PPW.Redesocial.Controllers
                 Publicacoes = 20
             };
 
-
             string usuariosPath = Path.Combine(_env.ContentRootPath, "wwwroot", "BaseTemp", "usuarios.json");
-            string postsPath = Path.Combine(_env.ContentRootPath, "wwwroot", "BaseTemp", "posts.json");
-
-       
             var usuariosJson = System.IO.File.ReadAllText(usuariosPath);
-            var postsJson = System.IO.File.ReadAllText(postsPath);
-
-   
             var usuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(usuariosJson) ?? new List<UsuarioModel>();
-            var posts = JsonConvert.DeserializeObject<List<PostModel>>(postsJson) ?? new List<PostModel>();
 
+            // CHAMADA À API:
+            var client = _httpClientFactory.CreateClient();
+            var userId = "GUID_DO_USUARIO"; // SSUBSTITUIR POSTERIORMENTE
+            // var response = await client.GetAsync($"http://localhost:5000/api/feed/{userId}");
+
+            List<PostModel> posts = new();
+
+            //if (response.IsSuccessStatusCode)
+            //{
+            //    var json = await response.Content.ReadAsStringAsync();
+            //    posts = JsonConvert.DeserializeObject<List<PostModel>>(json);
+            //}
+         
             var viewModel = new FeedViewModel
             {
                 Usuarios = usuarios,
                 Postagens = posts,
                 UsuarioAtivo = usuarioativo,
-                NovoPost = new PostModel()
-
+                NovoPost = new PostModel(),
+                StoriesExternos = new List<StoryModel>
+        {
+            new StoryModel { ImagemUrl = "~/Imagens/story1.jpg", DataExpiracao = DateTime.Now.AddHours(24), Id = Guid.NewGuid(), IdUsuario = Guid.NewGuid() },
+            new StoryModel { ImagemUrl = "~/Imagens/story2.jpg", DataExpiracao = DateTime.Now.AddHours(24), Id = Guid.NewGuid(), IdUsuario = Guid.NewGuid() }
+        }
             };
-            viewModel.StoriesExternos = new List<StoryModel>
-                {
-                    new StoryModel { ImagemUrl = "~/Imagens/story1.jpg", DataExpiracao = DateTime.Now.AddHours(24), Id = Guid.NewGuid(), IdUsuario = Guid.NewGuid() },
-                    new StoryModel { ImagemUrl = "~/Imagens/story2.jpg", DataExpiracao = DateTime.Now.AddHours(24), Id = Guid.NewGuid(), IdUsuario = Guid.NewGuid() }
-                };
-
 
             return View(viewModel);
         }

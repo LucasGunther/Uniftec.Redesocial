@@ -2,19 +2,14 @@
 {
     public class PostModel
     {
-        
-        public Guid IdPost { get; set; } = Guid.NewGuid(); 
-        public Guid IdUsuarioPost { get; set; }
-        public string TextoPost { get; set; }
-        public string ImagemUrl { get; set; }
-        public DateTime DataPublicacao { get; set; } = DateTime.Now;
-        public int QuantidadeCurtidas { get; set; } = 0;
-        public int QuantidadeComentarios { get; set; } = 0;
-        public string NomeAutor { get; set; } 
-        public string FotoPerfilAutor { get; set; }
-
-
-
+        public Guid Id { get; set; }
+        public Guid UserId { get; set; }
+        public Guid ContentId { get; set; }
+        public DateTime PublishedAt { get; set; }
+        public string TextPreview { get; set; }
+        public int LikeCount { get; set; }
+        public int CommentCount { get; set; }
+        public DateTime date {  get; set; }
     }
 
 }

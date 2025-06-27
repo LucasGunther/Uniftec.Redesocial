@@ -17,3 +17,4 @@ namespace Uniftec.PPW.Redesocial.FeedAPI.Aplicacao.DTO
         public int CommentCount { get; set; }
     }
 }
+

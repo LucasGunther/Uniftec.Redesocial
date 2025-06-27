@@ -128,5 +128,31 @@
     "Seguidores": 950,
     "Seguindo": 800,
     "FotoPerfil": "~/Imagens/teste.JPG"
+  },
+  {
+    "ID": "df2e3933-7aa4-402e-9661-48e23d3a638f",
+    "Nome": "asd",
+    "Senha": "asd",
+    "Username": "asd",
+    "DataNascimento": "2025-06-08T00:00:00",
+    "Genero": "asd",
+    "Descricao": "asd",
+    "Publicacoes": 0,
+    "Seguidores": 0,
+    "Seguindo": 0,
+    "FotoPerfil": "asd"
+  },
+  {
+    "ID": "4c120e6d-3efd-4c83-95e0-6524d4e5bfe4",
+    "Nome": "asd",
+    "Senha": "asd",
+    "Username": "asd",
+    "DataNascimento": "2025-06-08T00:00:00",
+    "Genero": "asd",
+    "Descricao": "asd",
+    "Publicacoes": 0,
+    "Seguidores": 0,
+    "Seguindo": 0,
+    "FotoPerfil": "asd"
   }
 ]

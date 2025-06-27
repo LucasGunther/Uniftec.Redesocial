@@ -91,25 +91,22 @@
                     <ul class="panel-activity__list">
                         @foreach (var post in Model.Postagens)
                         {
-                            var usuario = Model.Usuarios.FirstOrDefault(u => u.ID == post.IdUsuarioPost);
-                            <!-- Encontre o usuário com base no ID do post -->
+                            var usuario = Model.Usuarios.FirstOrDefault(u => u.ID == post.UserId);
                             if (usuario != null)
                             {
                                 <li>
                                     <i class="activity__list__icon fa fa-question-circle-o"></i>
                                     <div class="activity__list__header">
-                                        <img src="@Url.Content(@usuario.FotoPerfil)" alt="Foto Perfil" />
-                                        <a href="/Usuario/Perfil/@usuario.ID">@usuario.Nome</a> publicou: <a href="#">usuario.TextoPost</a>
+                                        <img src="@Url.Content(usuario.FotoPerfil)" alt="Foto Perfil" />
+                                        <a href="/Usuario/Perfil/@usuario.ID">@usuario.Nome</a> publicou: <a href="#">@post.TextPreview</a>
                                     </div>
                                     <div class="activity__list__body entry-content">
-                                        <p>
-                                            @post.TextoPost
-                                        </p>
+                                        <p>@post.TextPreview</p>
                                     </div>
                                     <div class="activity__list__footer">
-                                        <a href="#"> <i class="fa fa-thumbs-up"></i>@post.QuantidadeCurtidas</a>
-                                        <a href="#"> <i class="fa fa-comments"></i>0</a>
-                                        <span> <i class="fa fa-clock"></i>agora mesmo</span>
+                                        <a href="#"> <i class="fa fa-thumbs-up"></i>@post.LikeCount</a>
+                                        <a href="#"> <i class="fa fa-comments"></i>@post.CommentCount</a>
+                                        <span> <i class="fa fa-clock"></i> @post.date.ToString("dd/MM/yyyy HH:mm")</span>
                                     </div>
                                 </li>
                             }

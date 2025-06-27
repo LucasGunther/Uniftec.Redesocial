@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hMr/mCgofGe9IjNmWaxFGnhIRcoAyMeAlb+fz6zlhBk=",
+  "Hash": "OzLfNklsoSsd/xp9flxNWlEol8Ibjp1HPONMDVQr/X0=",
   "Source": "Uiftec.PPW.Redesocial",
   "BasePath": "_content/Uiftec.PPW.Redesocial",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagens\\avatar6.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\wwwroot\\Imagens\\GCAP2025Win64v1.3.exe",
+      "SourceId": "Uiftec.PPW.Redesocial",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\wwwroot\\",
+      "BasePath": "_content/Uiftec.PPW.Redesocial",
+      "RelativePath": "Imagens/GCAP2025Win64v1.3.exe",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\GCAP2025Win64v1.3.exe"
     },
     {
       "Identity": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\wwwroot\\Imagens\\lupa.svg",
