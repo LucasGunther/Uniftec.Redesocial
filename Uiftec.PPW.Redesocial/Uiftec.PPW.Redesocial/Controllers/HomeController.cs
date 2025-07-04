@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Uiftec.PPW.Redesocial.Models;
@@ -22,52 +22,97 @@ namespace Uiftec.PPW.Redesocial.Controllers
 
         public async Task<IActionResult> Index()
         {
-            UsuarioModel usuarioativo = new UsuarioModel()
+            string userId = HttpContext.Session.GetString("UsuarioLogadoId");
+
+            if (string.IsNullOrEmpty(userId))
             {
-                Nome = "Lucas Gunther",
-                FotoPerfil = "~/Imagens/avatar6.JPG",
-                Seguindo = 22,
-                Seguidores = 200,
-                Publicacoes = 20
-            };
+                return RedirectToAction("Index", "Login");
+            }
 
             string usuariosPath = Path.Combine(_env.ContentRootPath, "wwwroot", "BaseTemp", "usuarios.json");
             var usuariosJson = System.IO.File.ReadAllText(usuariosPath);
             var usuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(usuariosJson) ?? new List<UsuarioModel>();
 
-            // CHAMADA � API:
-            var client = _httpClientFactory.CreateClient();
-            var userId = "GUID_DO_USUARIO"; // SSUBSTITUIR POSTERIORMENTE
-            // var response = await client.GetAsync($"http://localhost:5000/api/feed/{userId}");
+            var usuarioativo = usuarios.FirstOrDefault(u => u.ID.ToString() == userId);
 
+            if (usuarioativo == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+
+            var client = _httpClientFactory.CreateClient();
             List<PostModel> posts = new();
 
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    var json = await response.Content.ReadAsStringAsync();
-            //    posts = JsonConvert.DeserializeObject<List<PostModel>>(json);
-            //}
-         
+            var response = await client.GetAsync($"https://seuservidor/api/feed/geral"); ///ajustar api
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                posts = JsonConvert.DeserializeObject<List<PostModel>>(json) ?? new List<PostModel>();
+            }
+
+            // ✅ CHAMADA API DE STORIES (separada)
+            List<StoryModel> stories = new();
+            var storiesResponse = await client.GetAsync("https://api.seuservidor.com/api/stories"); ///ajustar api
+            if (storiesResponse.IsSuccessStatusCode)
+            {
+                var json = await storiesResponse.Content.ReadAsStringAsync();
+                stories = JsonConvert.DeserializeObject<List<StoryModel>>(json) ?? new List<StoryModel>();
+            }
+
+            // Monta ViewModel final
             var viewModel = new FeedViewModel
             {
                 Usuarios = usuarios,
                 Postagens = posts,
                 UsuarioAtivo = usuarioativo,
                 NovoPost = new PostModel(),
-                StoriesExternos = new List<StoryModel>
-        {
-            new StoryModel { ImagemUrl = "~/Imagens/story1.jpg", DataExpiracao = DateTime.Now.AddHours(24), Id = Guid.NewGuid(), IdUsuario = Guid.NewGuid() },
-            new StoryModel { ImagemUrl = "~/Imagens/story2.jpg", DataExpiracao = DateTime.Now.AddHours(24), Id = Guid.NewGuid(), IdUsuario = Guid.NewGuid() }
-        }
+                StoriesExternos = stories
             };
+
 
             return View(viewModel);
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public async Task<IActionResult> Criar(string TextoPost)
         {
-            return View();
+            string userId = HttpContext.Session.GetString("UsuarioLogadoId");
+
+            if (string.IsNullOrEmpty(userId))
+                return RedirectToAction("Index", "Login");
+
+            var novoPost = new PostModel
+            {
+                Id = Guid.NewGuid(),
+                UserId = Guid.Parse(userId),
+                TextPreview = TextoPost,
+                date = DateTime.Now,
+                LikeCount = 0,
+                CommentCount = 0
+            };
+
+            var client = _httpClientFactory.CreateClient();
+
+            var jsonContent = new StringContent(
+                JsonConvert.SerializeObject(novoPost),
+                System.Text.Encoding.UTF8,
+                "application/json");
+
+            var response = await client.PostAsync("https://seuservidor/api/feed", jsonContent);
+
+            if (response.IsSuccessStatusCode)
+            {
+                TempData["Mensagem"] = "Post publicado com sucesso!";
+            }
+            else
+            {
+                TempData["Erro"] = "Erro ao publicar o post.";
+            }
+
+            return RedirectToAction("Index");
         }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -75,4 +120,5 @@ namespace Uiftec.PPW.Redesocial.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
+
 }

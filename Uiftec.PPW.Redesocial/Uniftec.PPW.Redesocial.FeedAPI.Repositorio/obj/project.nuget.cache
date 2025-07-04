@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D55X/rPDicg+FtabpRYgYSM/yoWKNIE72KIMQd4VLQ9eAsNtrdbr4KXkaHwGAClKta97+ADUwLk+cjW62EoTgQ==",
+  "dgSpecHash": "CUBQjCa0OK3zWaF+EAAd8D5R6XauqB6PiknaknRaAHMyHvR19RiglM5jpv8x2XPCImVonMLV1JdDdMHgH7dvCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",

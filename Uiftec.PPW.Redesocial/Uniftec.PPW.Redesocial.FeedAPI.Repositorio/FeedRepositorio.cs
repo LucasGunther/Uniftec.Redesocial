@@ -12,7 +12,8 @@ namespace Uniftec.PPW.Redesocial.FeedAPI.Repositorio
     public class FeedRepository : IFeedRepositorio
     {
         //private string strConexao = "Server=localhost;Port=5432;Database=projetosweb;User Id=postgres;Password=Guntherzinho00";
-        private string strConexao = "Server=localhost;Port=5432;Database=redesocial;User Id=postgres;Password=tatubola;";
+        //private string strConexao = "Server=localhost;Port=5432;Database=redesocial;User Id=postgres;Password=tatubola;";
+        private string strConexao = "Server=191.242.230.255;Port=5432;Database=feed;User Id=postgres;Password=12345678;";
         public void AddFeedItem(FeedItem feedItem)
         {
             using (var conexao = new NpgsqlConnection(strConexao))

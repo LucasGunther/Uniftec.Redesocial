@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj",
+      "projectUniqueName": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj",
       "projectName": "Uiftec.PPW.Redesocial",
-      "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj",
+      "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj",
       "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\obj\\",
+      "outputPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",

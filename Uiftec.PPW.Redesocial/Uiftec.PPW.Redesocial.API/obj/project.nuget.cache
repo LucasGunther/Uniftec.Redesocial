@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dkn9feJhtbro0yLeMu9sZPhmZF1p1yTCmczASi2fb9YDj79Otmp70nXF7pBDEeAgsiVwpTr3/o79zj+5IIorXA==",
+  "dgSpecHash": "JJFMVV3cbdnk9lDhgqKx4/fQL3AQt/fMEytxBwXSGSpmf+g37p51izK0/fLdEJk7mevHnMdXuKZRfUrGB31I/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.API\\Uiftec.PPW.Redesocial.API.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.API\\Uiftec.PPW.Redesocial.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",

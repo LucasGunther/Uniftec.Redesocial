@@ -662,11 +662,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.API\\Uiftec.PPW.Redesocial.API.csproj",
+      "projectUniqueName": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.API\\Uiftec.PPW.Redesocial.API.csproj",
       "projectName": "Uiftec.PPW.Redesocial.API",
-      "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.API\\Uiftec.PPW.Redesocial.API.csproj",
+      "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.API\\Uiftec.PPW.Redesocial.API.csproj",
       "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.API\\obj\\",
+      "outputPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -683,14 +683,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Aplicacao\\Uniftec.PPW.Redesocial.FeedAPI.Aplicacao.csproj": {
-              "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Aplicacao\\Uniftec.PPW.Redesocial.FeedAPI.Aplicacao.csproj"
+            "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Aplicacao\\Uniftec.PPW.Redesocial.FeedAPI.Aplicacao.csproj": {
+              "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Aplicacao\\Uniftec.PPW.Redesocial.FeedAPI.Aplicacao.csproj"
             },
-            "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Dominio\\Uniftec.PPW.Redesocial.FeedAPI.Dominio.csproj": {
-              "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Dominio\\Uniftec.PPW.Redesocial.FeedAPI.Dominio.csproj"
+            "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Dominio\\Uniftec.PPW.Redesocial.FeedAPI.Dominio.csproj": {
+              "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Dominio\\Uniftec.PPW.Redesocial.FeedAPI.Dominio.csproj"
             },
-            "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio.csproj": {
-              "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio.csproj"
+            "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio.csproj": {
+              "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Backup\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio.csproj"
             }
           }
         }
