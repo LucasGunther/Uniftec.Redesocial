@@ -55,24 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ellen\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lucas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj",
+      "projectUniqueName": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj",
       "projectName": "Uiftec.PPW.Redesocial",
-      "projectPath": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj",
-      "packagesPath": "C:\\Users\\ellen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\obj\\",
+      "projectPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj",
+      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucas\\Documents\\GITHUB\\Uniftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ellen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -92,13 +87,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -128,7 +117,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

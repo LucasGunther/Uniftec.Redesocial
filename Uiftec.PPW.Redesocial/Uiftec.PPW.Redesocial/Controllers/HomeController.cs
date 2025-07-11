@@ -1,9 +1,15 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using Uiftec.PPW.Redesocial.Models;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using static Uiftec.PPW.Redesocial.Models.StoryModel;
+using System.Diagnostics;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using Uiftec.PPW.Redesocial.Models;
 
 namespace Uiftec.PPW.Redesocial.Controllers
 {
@@ -22,53 +28,106 @@ namespace Uiftec.PPW.Redesocial.Controllers
 
         public async Task<IActionResult> Index()
         {
-            string userId = HttpContext.Session.GetString("UsuarioLogadoId");
-
-            if (string.IsNullOrEmpty(userId))
+            if (!Request.Cookies.TryGetValue("UsuarioLogadoId", out var userId))
             {
                 return RedirectToAction("Index", "Login");
             }
 
-            string usuariosPath = Path.Combine(_env.ContentRootPath, "wwwroot", "BaseTemp", "usuarios.json");
-            var usuariosJson = System.IO.File.ReadAllText(usuariosPath);
-            var usuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(usuariosJson) ?? new List<UsuarioModel>();
+            var usuariosPath = Path.Combine(_env.WebRootPath, "BaseTemp", "usuarios.json");
+            List<UsuarioModel> usuarios = new();
 
-            var usuarioativo = usuarios.FirstOrDefault(u => u.ID.ToString() == userId);
-
-            if (usuarioativo == null)
+            if (System.IO.File.Exists(usuariosPath))
             {
-                return RedirectToAction("Index", "Login");
+                try
+                {
+                    var usuariosJson = System.IO.File.ReadAllText(usuariosPath);
+                    usuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(usuariosJson) ?? new();
+                }
+                catch { }
             }
 
-            var client = _httpClientFactory.CreateClient();
+            var usuarioAtivo = usuarios.FirstOrDefault(u => u.ID.ToString() == userId);
+
+            if (usuarioAtivo == null)
+            {
+                try
+                {
+                    var client = _httpClientFactory.CreateClient();
+                    var responseUser = await client.GetAsync($"http://usuario.neurosky.com.br/api/usuario/{userId}");
+
+                    if (responseUser.IsSuccessStatusCode)
+                    {
+                        var userJson = await responseUser.Content.ReadAsStringAsync();
+                        usuarioAtivo = JsonConvert.DeserializeObject<UsuarioModel>(userJson);
+
+                        if (usuarioAtivo != null)
+                        {
+                            usuarios.Add(usuarioAtivo);
+                            System.IO.File.WriteAllText(usuariosPath, JsonConvert.SerializeObject(usuarios, Formatting.Indented));
+                        }
+                    }
+                }
+                catch { }
+            }
+
+            if (usuarioAtivo == null)
+                return RedirectToAction("Index", "Login");
+
+            var clientHttp = _httpClientFactory.CreateClient();
+
             List<PostModel> posts = new();
-
-            var response = await client.GetAsync($"https://seuservidor/api/feed/geral"); ///ajustar api
-            if (response.IsSuccessStatusCode)
-            {
-                var json = await response.Content.ReadAsStringAsync();
-                posts = JsonConvert.DeserializeObject<List<PostModel>>(json) ?? new List<PostModel>();
-            }
-
-            // ✅ CHAMADA API DE STORIES (separada)
             List<StoryModel> stories = new();
-            var storiesResponse = await client.GetAsync("https://api.seuservidor.com/api/stories"); ///ajustar api
-            if (storiesResponse.IsSuccessStatusCode)
-            {
-                var json = await storiesResponse.Content.ReadAsStringAsync();
-                stories = JsonConvert.DeserializeObject<List<StoryModel>>(json) ?? new List<StoryModel>();
-            }
 
-            // Monta ViewModel final
+            try
+            {
+                var response = await clientHttp.GetAsync("http://feed.neurosky.com.br/api/feed/geral");
+                if (response.IsSuccessStatusCode)
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+                    posts = JsonConvert.DeserializeObject<List<PostModel>>(json) ?? new();
+
+                    // Adiciona curtidas e comentários a cada post
+                    foreach (var post in posts)
+                    {
+                        // Curtidas
+                        var curtidaResp = await clientHttp.GetAsync($"http://curtidas.neurosky.com.br/api/Curtidas/post/{post.Id}/count");
+                        if (curtidaResp.IsSuccessStatusCode)
+                        {
+                            var curtidasCount = await curtidaResp.Content.ReadAsStringAsync();
+                            post.LikeCount = int.TryParse(curtidasCount, out var lc) ? lc : 0;
+                        }
+
+                        // Comentários
+                        var comentariosResp = await clientHttp.GetAsync($"http://history.neurosky.com.br/api/Comentarios/post/{post.Id}/count");
+                        if (comentariosResp.IsSuccessStatusCode)
+                        {
+                            var comentariosCount = await comentariosResp.Content.ReadAsStringAsync();
+                            post.CommentCount = int.TryParse(comentariosCount, out var cc) ? cc : 0;
+                        }
+                    }
+                }
+            }
+            catch { }
+
+            try
+            {
+                var storiesResponse = await clientHttp.GetAsync("http://stories.neurosky.com.br/api/stories");
+                if (storiesResponse.IsSuccessStatusCode)
+                {
+                    var json = await storiesResponse.Content.ReadAsStringAsync();
+                    stories = JsonConvert.DeserializeObject<List<StoryModel>>(json) ?? new();
+                }
+            }
+            catch { }
+
             var viewModel = new FeedViewModel
             {
                 Usuarios = usuarios,
                 Postagens = posts,
-                UsuarioAtivo = usuarioativo,
+                UsuarioAtivo = usuarioAtivo,
                 NovoPost = new PostModel(),
                 StoriesExternos = stories
             };
-
 
             return View(viewModel);
         }
@@ -76,9 +135,7 @@ namespace Uiftec.PPW.Redesocial.Controllers
         [HttpPost]
         public async Task<IActionResult> Criar(string TextoPost)
         {
-            string userId = HttpContext.Session.GetString("UsuarioLogadoId");
-
-            if (string.IsNullOrEmpty(userId))
+            if (!Request.Cookies.TryGetValue("UsuarioLogadoId", out var userId))
                 return RedirectToAction("Index", "Login");
 
             var novoPost = new PostModel
@@ -95,24 +152,18 @@ namespace Uiftec.PPW.Redesocial.Controllers
 
             var jsonContent = new StringContent(
                 JsonConvert.SerializeObject(novoPost),
-                System.Text.Encoding.UTF8,
+                Encoding.UTF8,
                 "application/json");
 
-            var response = await client.PostAsync("https://seuservidor/api/feed", jsonContent);
+            var response = await client.PostAsync("http://feed.neurosky.com.br/api/feed", jsonContent);
 
             if (response.IsSuccessStatusCode)
-            {
                 TempData["Mensagem"] = "Post publicado com sucesso!";
-            }
             else
-            {
                 TempData["Erro"] = "Erro ao publicar o post.";
-            }
 
             return RedirectToAction("Index");
         }
-
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -120,5 +171,4 @@ namespace Uiftec.PPW.Redesocial.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
-
 }

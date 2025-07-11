@@ -5,8 +5,6 @@ using Uiftec.PPW.Redesocial.Models;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
-using System.Text;
-using System.Net.Http;
 
 namespace Uiftec.PPW.Redesocial.Controllers
 {
@@ -30,33 +28,30 @@ namespace Uiftec.PPW.Redesocial.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(string username, string senha)
+        public IActionResult Login(string username, string senha)
         {
-            var client = new HttpClient(); // ou _httpClientFactory.CreateClient()
+            var path = Path.Combine(_env.WebRootPath, "BaseTemp", "usuarios.json");
 
-            var loginData = new
+            if (!System.IO.File.Exists(path))
+                return View("Index");
+
+            var json = System.IO.File.ReadAllText(path);
+            var usuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(json) ?? new List<UsuarioModel>();
+
+            var usuario = usuarios.FirstOrDefault(u =>
+                u.Username.ToLower() == username.ToLower() && u.Senha == senha);
+
+            if (usuario != null)
             {
-                Username = username,
-                Senha = senha
-            };
-
-            var content = new StringContent(
-                JsonConvert.SerializeObject(loginData),
-                Encoding.UTF8,
-                "application/json"
-            );
-
-            var response = await client.PostAsync("https://suaapi.com/api/login", content); ////definir api
-
-            if (response.IsSuccessStatusCode)
-            {
-                var responseBody = await response.Content.ReadAsStringAsync();
-                var usuario = JsonConvert.DeserializeObject<UsuarioModel>(responseBody);
-
-                HttpContext.Session.SetString("UsuarioLogadoId", usuario.ID.ToString());
-
-                // (Opcional: salvar token JWT se a API enviar)
-                // HttpContext.Session.SetString("AuthToken", token);
+                // Cria cookie com o ID do usuário (expira em 30 minutos)
+                CookieOptions options = new CookieOptions
+                {
+                    Expires = DateTime.Now.AddMinutes(30),
+                    HttpOnly = true,
+                    IsEssential = true,
+                    Secure = false // Se HTTPS, deve ser true
+                };
+                Response.Cookies.Append("UsuarioLogadoId", usuario.ID.ToString(), options);
 
                 return RedirectToAction("Index", "Home");
             }
@@ -72,74 +67,51 @@ namespace Uiftec.PPW.Redesocial.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EsqueciSenha(string username)
+        public IActionResult EsqueciSenha(string username)
         {
-            var client = new HttpClient();
+            var path = Path.Combine(_env.WebRootPath, "BaseTemp", "usuarios.json");
 
-            var content = new StringContent(
-                JsonConvert.SerializeObject(new { Username = username }),
-                Encoding.UTF8,
-                "application/json"
-            );
-
-            var response = await client.PostAsync("https://suaapi.com/api/usuarios/esqueci-senha", content);
-
-            if (response.IsSuccessStatusCode)
+            if (!System.IO.File.Exists(path))
             {
-                var json = await response.Content.ReadAsStringAsync();
-                var usuario = JsonConvert.DeserializeObject<UsuarioModel>(json);
-
-                // Pode passar o ID ou token recebido da API para a view de redefinir
-                return View("RedefinirSenha", usuario);
+                ViewBag.Erro = "Base de usuários não encontrada.";
+                return View();
             }
 
-            ViewBag.Erro = "Usuário não encontrado.";
-            return View();
-        }
+            var json = System.IO.File.ReadAllText(path);
+            var usuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(json) ?? new List<UsuarioModel>();
 
+            var usuario = usuarios.FirstOrDefault(u => u.Username.ToLower() == username.ToLower());
+
+            if (usuario == null)
+            {
+                ViewBag.Erro = "Usuário não encontrado.";
+                return View();
+            }
+
+            // Redirecionar para redefinição de senha
+            return View("RedefinirSenha", usuario);
+        }
 
         [HttpPost]
-        public async Task<IActionResult> RedefinirSenha(UsuarioModel model)
+        public IActionResult RedefinirSenha(UsuarioModel model)
         {
-            if (model == null || string.IsNullOrEmpty(model.Senha))
+            var path = Path.Combine(_env.WebRootPath, "BaseTemp", "usuarios.json");
+
+            var json = System.IO.File.ReadAllText(path);
+            var usuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(json) ?? new List<UsuarioModel>();
+
+            var usuario = usuarios.FirstOrDefault(u => u.ID == model.ID);
+
+            if (usuario != null)
             {
-                ViewBag.Erro = "Senha inválida.";
-                return View("RedefinirSenha", model);
+                usuario.Senha = model.Senha;
+                System.IO.File.WriteAllText(path, JsonConvert.SerializeObject(usuarios, Formatting.Indented));
+                TempData["Mensagem"] = "Senha redefinida com sucesso!";
+                return RedirectToAction("Index");
             }
 
-            try
-            {
-                var client = new HttpClient();
-
-                var content = new StringContent(
-                    JsonConvert.SerializeObject(new
-                    {
-                        Id = model.ID,
-                        NovaSenha = model.Senha
-                    }),
-                    Encoding.UTF8,
-                    "application/json"
-                );
-
-                // Faça o PUT ou POST de acordo com a definição da API
-                var response = await client.PutAsync("https://suaapi.com/api/usuarios/redefinir-senha", content);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    TempData["Mensagem"] = "Senha redefinida com sucesso!";
-                    return RedirectToAction("Index");
-                }
-
-                ViewBag.Erro = "Erro ao redefinir senha.";
-                return View("RedefinirSenha", model);
-            }
-            catch (Exception ex)
-            {
-                ViewBag.Erro = $"Erro ao conectar à API: {ex.Message}";
-                return View("RedefinirSenha", model);
-            }
+            ViewBag.Erro = "Erro ao redefinir senha.";
+            return View("RedefinirSenha", model);
         }
-
-
     }
 }
