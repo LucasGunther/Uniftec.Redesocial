@@ -165,6 +165,166 @@ namespace Uiftec.PPW.Redesocial.Controllers
             return RedirectToAction("Index");
         }
 
+        // Métodos para Comentários
+
+        [HttpGet]
+        public async Task<IActionResult> ObterComentario(Guid id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetAsync($"http://history.neurosky.com.br/api/Comentarios/{id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var comentario = JsonConvert.DeserializeObject<ComentarioModel>(json);
+                return Ok(comentario);
+            }
+
+            return NotFound();
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> AtualizarComentario(Guid id, [FromBody] ComentarioModel comentario)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonContent = new StringContent(
+                JsonConvert.SerializeObject(comentario),
+                Encoding.UTF8,
+                "application/json");
+
+            var response = await client.PutAsync($"http://history.neurosky.com.br/api/Comentarios/{id}", jsonContent);
+
+            if (response.IsSuccessStatusCode)
+                return Ok("Comentário atualizado com sucesso.");
+
+            return BadRequest("Erro ao atualizar o comentário.");
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> ExcluirComentario(Guid id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.DeleteAsync($"http://history.neurosky.com.br/api/Comentarios/{id}");
+
+            if (response.IsSuccessStatusCode)
+                return Ok("Comentário excluído com sucesso.");
+
+            return BadRequest("Erro ao excluir o comentário.");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ObterComentariosPorPost(Guid idPost)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetAsync($"http://history.neurosky.com.br/api/Comentarios/post/{idPost}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var comentarios = JsonConvert.DeserializeObject<List<ComentarioModel>>(json);
+                return Ok(comentarios);
+            }
+
+            return NotFound();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CriarComentario([FromBody] ComentarioModel comentario)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonContent = new StringContent(
+                JsonConvert.SerializeObject(comentario),
+                Encoding.UTF8,
+                "application/json");
+
+            var response = await client.PostAsync("http://history.neurosky.com.br/api/Comentarios", jsonContent);
+
+            if (response.IsSuccessStatusCode)
+                return Ok("Comentário criado com sucesso.");
+
+            return BadRequest("Erro ao criar o comentário.");
+        }
+
+        // Métodos para Curtidas
+
+        [HttpGet]
+        public async Task<IActionResult> ObterCurtida(Guid id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetAsync($"http://curtidas.neurosky.com.br/api/Curtidas/{id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var curtida = JsonConvert.DeserializeObject<CurtidaModel>(json);
+                return Ok(curtida);
+            }
+
+            return NotFound();
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> AtualizarCurtida(Guid id, [FromBody] CurtidaModel curtida)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonContent = new StringContent(
+                JsonConvert.SerializeObject(curtida),
+                Encoding.UTF8,
+                "application/json");
+
+            var response = await client.PutAsync($"http://curtidas.neurosky.com.br/api/Curtidas/{id}", jsonContent);
+
+            if (response.IsSuccessStatusCode)
+                return Ok("Curtida atualizada com sucesso.");
+
+            return BadRequest("Erro ao atualizar a curtida.");
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> ExcluirCurtida(Guid id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.DeleteAsync($"http://curtidas.neurosky.com.br/api/Curtidas/{id}");
+
+            if (response.IsSuccessStatusCode)
+                return Ok("Curtida excluída com sucesso.");
+
+            return BadRequest("Erro ao excluir a curtida.");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ObterCurtidasPorPost(Guid idPost)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetAsync($"http://curtidas.neurosky.com.br/api/Curtidas/post/{idPost}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var curtidas = JsonConvert.DeserializeObject<List<CurtidaModel>>(json);
+                return Ok(curtidas);
+            }
+
+            return NotFound();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CriarCurtida([FromBody] CurtidaModel curtida)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonContent = new StringContent(
+                JsonConvert.SerializeObject(curtida),
+                Encoding.UTF8,
+                "application/json");
+
+            var response = await client.PostAsync("http://curtidas.neurosky.com.br/api/Curtidas", jsonContent);
+
+            if (response.IsSuccessStatusCode)
+                return Ok("Curtida criada com sucesso.");
+
+            return BadRequest("Erro ao criar a curtida.");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
