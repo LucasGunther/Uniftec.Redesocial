@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rbqv0o62y7"},{"Name":"integrity","Value":"sha256-\u002BSi1QRs2P12KV6X4q1Tu/VR4HHfztuOICQP2LWwDPX0="},{"Name":"label","Value":"_content/Uiftec.PPW.Redesocial/BaseTemp/posts.json"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5581"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022\u002BSi1QRs2P12KV6X4q1Tu/VR4HHfztuOICQP2LWwDPX0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Jul 2025 01:24:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Uiftec.PPW.Redesocial/BaseTemp/usuarios.2cyoms22r6.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BaseTemp\usuarios.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2cyoms22r6"},{"Name":"integrity","Value":"sha256-0ildOAP1M5w1VWiD6jgJVi976NMPWwv5Omr/Pt/bUbA="},{"Name":"label","Value":"_content/Uiftec.PPW.Redesocial/BaseTemp/usuarios.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5345"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00220ildOAP1M5w1VWiD6jgJVi976NMPWwv5Omr/Pt/bUbA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Jul 2025 03:49:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Uiftec.PPW.Redesocial/BaseTemp/usuarios.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BaseTemp\usuarios.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4zKDIF2VahEvzX0vg1qOVby2yRLRQ3BtxGBHlzI037I="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4722"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00224zKDIF2VahEvzX0vg1qOVby2yRLRQ3BtxGBHlzI037I=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Jul 2025 01:33:08 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Uiftec.PPW.Redesocial/BaseTemp/usuarios.r67akvsjdk.json">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BaseTemp\usuarios.json'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r67akvsjdk"},{"Name":"integrity","Value":"sha256-4zKDIF2VahEvzX0vg1qOVby2yRLRQ3BtxGBHlzI037I="},{"Name":"label","Value":"_content/Uiftec.PPW.Redesocial/BaseTemp/usuarios.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4722"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00224zKDIF2VahEvzX0vg1qOVby2yRLRQ3BtxGBHlzI037I=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Jul 2025 01:33:08 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0ildOAP1M5w1VWiD6jgJVi976NMPWwv5Omr/Pt/bUbA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5345"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00220ildOAP1M5w1VWiD6jgJVi976NMPWwv5Omr/Pt/bUbA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Jul 2025 03:49:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Uiftec.PPW.Redesocial/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

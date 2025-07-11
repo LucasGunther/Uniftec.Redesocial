@@ -1,15 +1,10 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using System.Diagnostics;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using Uiftec.PPW.Redesocial.Models;
+using Newtonsoft.Json;
+using static Uiftec.PPW.Redesocial.Models.StoryModel;
+using System.Text;
 
 namespace Uiftec.PPW.Redesocial.Controllers
 {
@@ -32,8 +27,16 @@ namespace Uiftec.PPW.Redesocial.Controllers
             {
                 return RedirectToAction("Index", "Login");
             }
+            UsuarioModel usuarioativo = new UsuarioModel()
+            {
+                Nome = "Lucas Gunther",
+                FotoPerfil = "~/Imagens/avatar6.JPG",
+                Seguindo = 22,
+                Seguidores = 200,
+                Publicacoes = 20
+            };
 
-            var usuariosPath = Path.Combine(_env.WebRootPath, "BaseTemp", "usuarios.json");
+            string usuariosPath = Path.Combine(_env.ContentRootPath, "wwwroot", "BaseTemp", "usuarios.json");
             List<UsuarioModel> usuarios = new();
 
             if (System.IO.File.Exists(usuariosPath))
@@ -72,6 +75,18 @@ namespace Uiftec.PPW.Redesocial.Controllers
 
             if (usuarioAtivo == null)
                 return RedirectToAction("Index", "Login");
+
+
+            // CHAMADA À API:
+        //    var client = _httpClientFactory.CreateClient();
+            //var userId = "GUID_DO_USUARIO"; // SSUBSTITUIR POSTERIORMENTE
+            // var response = await client.GetAsync($"http://localhost:5000/api/feed/{userId}");
+
+            //if (response.IsSuccessStatusCode)
+            //{
+            //    var json = await response.Content.ReadAsStringAsync();
+            //    posts = JsonConvert.DeserializeObject<List<PostModel>>(json);
+            //}
 
             var clientHttp = _httpClientFactory.CreateClient();
 
@@ -120,13 +135,18 @@ namespace Uiftec.PPW.Redesocial.Controllers
             }
             catch { }
 
+
             var viewModel = new FeedViewModel
             {
                 Usuarios = usuarios,
                 Postagens = posts,
-                UsuarioAtivo = usuarioAtivo,
+                UsuarioAtivo = usuarioativo,
                 NovoPost = new PostModel(),
-                StoriesExternos = stories
+                StoriesExternos = new List<StoryModel>
+        {
+            new StoryModel { ImagemUrl = "~/Imagens/story1.jpg", DataExpiracao = DateTime.Now.AddHours(24), Id = Guid.NewGuid(), IdUsuario = Guid.NewGuid() },
+            new StoryModel { ImagemUrl = "~/Imagens/story2.jpg", DataExpiracao = DateTime.Now.AddHours(24), Id = Guid.NewGuid(), IdUsuario = Guid.NewGuid() }
+        }
             };
 
             return View(viewModel);
@@ -329,6 +349,11 @@ namespace Uiftec.PPW.Redesocial.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
         }
     }
 }

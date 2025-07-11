@@ -45,7 +45,7 @@ namespace Uiftec.PPW.Redesocial.Controllers
             usuarios.Add(usuario);
             SalvarUsuarios(usuarios);
 
-            return RedirectToAction("Buscar");
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]

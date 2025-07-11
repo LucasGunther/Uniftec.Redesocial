@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\usuario\\buscar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\usuario\\buscar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\usuario\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -19,20 +31,16 @@
       "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\usuario\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\usuario\\buscar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\usuario\\buscar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\login\\redefinirsenha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\login\\redefinirsenha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\login\\esquecisenha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\login\\esquecisenha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\login\\redefinirsenha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\login\\redefinirsenha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,12 +55,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAFUBAAAAAAAAAADwv18BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T04:22:32.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAwwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T04:01:22.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Uiftec.PPW.Redesocial\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAowC8AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwCcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T01:29:57.565Z",
               "EditorCaption": ""
@@ -65,26 +99,27 @@
               "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Buscar.cshtml",
               "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Buscar.cshtml",
               "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Buscar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAUwHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-11T01:28:43.277Z"
+              "WhenOpened": "2025-07-11T01:28:43.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Perfil.cshtml",
               "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Perfil.cshtml",
               "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Perfil.cshtml",
               "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Perfil.cshtml",
               "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Perfil.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAwwBoAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAYwE4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-11T01:28:23.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Cadastrar.cshtml",
               "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Cadastrar.cshtml",
               "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Cadastrar.cshtml",
@@ -92,7 +127,8 @@
               "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Cadastrar.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-11T01:28:04.248Z"
+              "WhenOpened": "2025-07-11T01:28:04.248Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -102,13 +138,14 @@
               "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Login\\RedefinirSenha.cshtml",
               "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\RedefinirSenha.cshtml",
               "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Login\\RedefinirSenha.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-11T01:27:43.895Z"
+              "WhenOpened": "2025-07-11T01:27:43.895Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "EsqueciSenha.cshtml",
               "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\EsqueciSenha.cshtml",
               "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Login\\EsqueciSenha.cshtml",
@@ -120,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Program.cs",
               "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Program.cs",
@@ -128,20 +165,20 @@
               "RelativeToolTip": "Uiftec.PPW.Redesocial\\Program.cs",
               "ViewState": "AgIAABAAAAAAAAAAAIAwwB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T01:31:42.176Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T01:31:42.176Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
               "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
               "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
               "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwD8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-11T01:31:14.461Z"
+              "WhenOpened": "2025-07-11T01:31:14.461Z",
+              "EditorCaption": ""
             }
           ]
         }
