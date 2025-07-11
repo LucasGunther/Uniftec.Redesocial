@@ -71,12 +71,12 @@
     <div class="perfil-box">
         @{
             var foto = string.IsNullOrEmpty(Model.FotoPerfil)
-            ? Url.Content("~/Imagens/avatar6.jpg")
+            ? Url.Content("../../Imagens/avatar6.jpg")
             : Model.FotoPerfil;
         }
 
         <img src="@foto" alt="Foto de Perfil"
-             onerror="this.src='~/Imagens/avatar6.jpg'" />
+             onerror="this.src='../../Imagens/avatar6.jpg'" />
 
         <h3>@Model.Nome</h3>
         <p class="text-muted">@Model.Username</p>
