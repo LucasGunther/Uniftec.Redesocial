@@ -154,5 +154,18 @@
     "Seguidores": 0,
     "Seguindo": 0,
     "FotoPerfil": "asd"
+  },
+  {
+    "ID": "c7fb9469-fd83-4fd4-ba99-e8fcb5166ee1",
+    "Nome": "aaa",
+    "Senha": "aaa",
+    "Username": "aaa",
+    "DataNascimento": "1111-01-01T00:00:00",
+    "Genero": "qaa",
+    "Descricao": "aaa",
+    "Publicacoes": 0,
+    "Seguidores": 0,
+    "Seguindo": 0,
+    "FotoPerfil": "aaa"
   }
 ]

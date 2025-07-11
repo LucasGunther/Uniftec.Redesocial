@@ -1,54 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\",
+  "WorkspaceRootPath": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89B09230-249E-4C76-8E95-FA6BAFDA4A33}|Uiftec.PPW.Redesocial.API\\Uiftec.PPW.Redesocial.API.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{89B09230-249E-4C76-8E95-FA6BAFDA4A33}|Uiftec.PPW.Redesocial.API\\Uiftec.PPW.Redesocial.API.csproj|solutionrelative:uiftec.ppw.redesocial.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B2E4D97-EE19-48E3-B634-FB71FB6BADDD}|Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uniftec.ppw.redesocial.feedapi.repositorio\\feedrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B2E4D97-EE19-48E3-B634-FB71FB6BADDD}|Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio.csproj|solutionrelative:uniftec.ppw.redesocial.feedapi.repositorio\\feedrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\usuario\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\usuario\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\usuario\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\usuario\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\usuario\\buscar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\usuario\\buscar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\login\\esquecisenha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\login\\esquecisenha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\source\\repos\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|c:\\users\\ellen\\documents\\github\\uniftec.redesocial2\\uniftec.redesocial\\uiftec.ppw.redesocial\\uiftec.ppw.redesocial\\views\\login\\redefinirsenha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F59A351C-293E-49D3-B01D-98C35429071D}|Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.csproj|solutionrelative:uiftec.ppw.redesocial\\views\\login\\redefinirsenha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,151 +47,101 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Uiftec.PPW.Redesocial.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-28T00:56:23.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-28T00:56:07.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FeedRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\FeedRepositorio.cs",
-              "RelativeDocumentMoniker": "Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\FeedRepositorio.cs",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\FeedRepositorio.cs",
-              "RelativeToolTip": "Uniftec.PPW.Redesocial.FeedAPI.Repositorio\\FeedRepositorio.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T23:49:14.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAgwBAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-03T00:25:07.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Index.cshtml",
-              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Index.cshtml",
-              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T22:13:45.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Uiftec.PPW.Redesocial\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAkwFMAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAowC8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T22:13:45.872Z",
+              "WhenOpened": "2025-07-11T01:29:57.565Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T22:13:45.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T22:13:45.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UsuarioModel.cs",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Models\\UsuarioModel.cs",
-              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Models\\UsuarioModel.cs",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Models\\UsuarioModel.cs",
-              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Models\\UsuarioModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T22:13:45.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Style.css",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\wwwroot\\css\\Style.css",
-              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\wwwroot\\css\\Style.css",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\wwwroot\\css\\Style.css",
-              "RelativeToolTip": "Uiftec.PPW.Redesocial\\wwwroot\\css\\Style.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-25T22:13:45.888Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAABWAAAAAAAAAA==",
+              "Title": "Buscar.cshtml",
+              "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Buscar.cshtml",
+              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Buscar.cshtml",
+              "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Buscar.cshtml",
+              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Buscar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T22:13:45.891Z",
+              "WhenOpened": "2025-07-11T01:28:43.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Perfil.cshtml",
+              "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Perfil.cshtml",
+              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Perfil.cshtml",
+              "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Perfil.cshtml",
+              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Perfil.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwBoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T01:28:23.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cadastrar.cshtml",
+              "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Cadastrar.cshtml",
+              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Cadastrar.cshtml",
+              "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Usuario\\Cadastrar.cshtml",
+              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Usuario\\Cadastrar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T01:28:04.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RedefinirSenha.cshtml",
+              "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\RedefinirSenha.cshtml",
+              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Login\\RedefinirSenha.cshtml",
+              "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\RedefinirSenha.cshtml",
+              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Login\\RedefinirSenha.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T01:27:43.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EsqueciSenha.cshtml",
+              "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\EsqueciSenha.cshtml",
+              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Login\\EsqueciSenha.cshtml",
+              "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\EsqueciSenha.cshtml",
+              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Login\\EsqueciSenha.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T01:27:30.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Program.cs",
+              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Program.cs",
+              "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Program.cs",
+              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIAwwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T01:31:42.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ellen\\source\\repos\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA3wBoAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T22:13:45.894Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ellen\\Documents\\GitHub\\Uniftec.Redesocial2\\Uniftec.Redesocial\\Uiftec.PPW.Redesocial\\Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Uiftec.PPW.Redesocial\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwD8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T01:31:14.461Z"
             }
           ]
         }
